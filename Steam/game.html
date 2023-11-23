@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Game</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- header -->
+      <div class="header">
+        <div class="header-container">
+          <div class="logo-container">
+            <img
+              src="https://store.akamai.steamstatic.com/public/shared/images/header/logo_steam.svg?t=962016"
+              width="176"
+              height="44"
+            />
+          </div>
+          <div id="navbar">
+            <nav class="nav nav-top">
+              <a
+                href="http://127.0.0.1:5500/CoderSchool/Javascript/Steam/index.html"
+                class="btn"
+                >Store</a
+              >
+              <a href="#Community" class="btn">Community</a>
+              <a href="http://127.0.0.1:5500/Porfolio/index.html" class="btn"
+                >About</a
+              >
+              <a href="#Contact" class="btn">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+      <!-- Side Bar -->
+      <div class="side">
+        <div class="side-container">
+          <h2>SEARCH FOR GAME</h2>
+          <form action="" class="search-form">
+            <div class="search-box">
+              <button
+                type="button"
+                class="btn-search"
+                onclick="getSearchResult()"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  height="1em"
+                  viewBox="0 0 512 512"
+                >
+                  <path
+                    d="M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z"
+                  />
+                </svg>
+              </button>
+              <input
+                type="text"
+                id="input-search"
+                placeholder="Type to Search..."
+              />
+            </div>
+          </form>
+          <div id="genres-list">
+            <h2>BROWSE BY GENRE</h2>
+            <ul>
+              <li><span>Action</span></li>
+              <li><span>Action</span></li>
+              <li><span>Action</span></li>
+              <li><span>Action</span></li>
+              <li><span>Action</span></li>
+              <li><span>Action</span></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- manner -->
+      <div class="manner">
+        <div class="manner-container">
+          <h2 id="title-manner">FEATURED GAMES</h2>
+          <div class="detail-container">
+            <div id="game-bg">
+              <img
+                src="https://steamcdn-a.akamaihd.net/steam/apps/730/page_bg_generated_v6b.jpg?t=1554409309"
+                alt=""
+                id="bg"
+              />
+            </div>
+            <div id="game-img">
+              <img
+                src="https://steamcdn-a.akamaihd.net/steam/apps/730/header.jpg?t=1554409309"
+                alt=""
+                id="head-img"
+              />
+            </div>
+            <p id="desc">
+              Counter-Strike: Global Offensive (CS: GO) expands upon the
+              team-based action gameplay that it pioneered when it was launched
+              19 years ago. CS: GO features new maps, characters, weapons, and
+              game modes, and delivers updated versions of the classic CS
+              content (de_dust2, etc.).
+            </p>
+            <div id="price">$10000.00</div>
+            <div class="general">
+              <div id="date">
+                Release date:
+                <div>2012-08-21</div>
+              </div>
+              <div id="dev">
+                Developer:
+                <div>Valve, Hidden Path Entertainment</div>
+              </div>
+            </div>
+            <span id="tag-span"
+              >Popular user-defined tags for this product:</span
+            >
+            <div id="tag-wrap">
+              <a class="tag">Young</a>
+              <a class="tag">Dumb</a>
+              <a class="tag">Broke</a>
+              <a class="tag">As Fucked</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Footer -->
+      <div class="botter">
+        <div class="footer-container">
+          <div class="footer-content">
+            <div class="rule"></div>
+            <div id="footer_logo">
+              <a href="http://www.valvesoftware.com" target="_blank" rel=""
+                ><img
+                  src="https://store.cloudflare.steamstatic.com/public/images/footerLogo_valve_new.png"
+                  alt="Valve Software"
+                  border="0"
+              /></a>
+            </div>
+            <div id="footer_text">
+              <div>
+                © 2023 Valve Corporation. All rights reserved. All trademarks
+                are property of their respective owners in the US and other
+                countries.
+              </div>
+              <div>
+                VAT included in all prices where applicable.&nbsp;&nbsp;
+                <a
+                  href="https://store.steampowered.com/privacy_agreement/?snr=1_44_44_"
+                  target="_blank"
+                  rel=""
+                  >Privacy Policy</a
+                >
+                &nbsp; | &nbsp;
+                <a
+                  href="https://store.steampowered.com/legal/?snr=1_44_44_"
+                  target="_blank"
+                  rel=""
+                  >Legal</a
+                >
+                &nbsp; | &nbsp;
+                <a
+                  href="https://store.steampowered.com/subscriber_agreement/?snr=1_44_44_"
+                  target="_blank"
+                  rel=""
+                  >Steam Subscriber Agreement</a
+                >
+                &nbsp; | &nbsp;
+                <a
+                  href="https://store.steampowered.com/steam_refunds/?snr=1_44_44_"
+                  target="_blank"
+                  rel=""
+                  >Refunds</a
+                >
+                &nbsp; | &nbsp;
+                <a
+                  href="https://store.steampowered.com/account/cookiepreferences/?snr=1_44_44_"
+                  target="_blank"
+                  rel=""
+                  >Cookies</a
+                >
+              </div>
+            </div>
+            <div id="footer_logo_steam">
+              <img
+                src="https://store.cloudflare.steamstatic.com/public/images/v6/logo_steam_footer.png"
+                alt="Valve Software"
+                border="0"
+              />
+            </div>
+            <div class="rule"></div>
+
+            <div class="valve_links">
+              <a
+                href="http://www.valvesoftware.com/about"
+                target="_blank"
+                rel=""
+                >About Valve</a
+              >
+              &nbsp; | &nbsp;<a
+                href="http://www.valvesoftware.com"
+                target="_blank"
+                rel=""
+                >Jobs</a
+              >
+              &nbsp; | &nbsp;<a
+                href="http://www.steampowered.com/steamworks/"
+                target="_blank"
+                rel=""
+                >Steamworks</a
+              >
+              &nbsp; | &nbsp;<a
+                href="https://partner.steamgames.com/steamdirect"
+                target="_blank"
+                rel=""
+                >Steam Distribution</a
+              >
+              &nbsp; | &nbsp;<a
+                href="https://help.steampowered.com/en/?snr=1_44_44_"
+                >Support</a
+              >
+              &nbsp; | &nbsp;<a
+                href="https://store.steampowered.com/digitalgiftcards/?snr=1_44_44_"
+                target="_blank"
+                rel=""
+                >Gift Cards</a
+              >
+              &nbsp; | &nbsp;<a
+                href="https://steamcommunity.com/linkfilter/?u=http%3A%2F%2Fwww.facebook.com%2FSteam"
+                target="_blank"
+                rel=" noopener"
+                ><img
+                  src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_facebook.gif"
+                />
+                Steam</a
+              >
+              &nbsp; | &nbsp;<a
+                href="http://twitter.com/steam"
+                target="_blank"
+                rel=""
+                ><img
+                  src="https://store.cloudflare.steamstatic.com/public/images/ico/ico_twitter.gif"
+                />
+                @steam</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="game-script.js"></script>
+  </body>
+</html>
