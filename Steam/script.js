@@ -1,6 +1,6 @@
 const BASE_URL = `https://steam-api-dot-cs-platform-306304.et.r.appspot.com`;
-const HOME_PAGE = `http://127.0.0.1:5500/CoderSchool/Javascript/Steam/index.html`;
-const GAME_PAGE = `http://127.0.0.1:5500/CoderSchool/Javascript/Steam/game.html`;
+const HOME_PAGE = `index.html`;
+const GAME_PAGE = `game.html`;
 
 // Redirect when click on image
 
